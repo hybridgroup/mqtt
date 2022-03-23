@@ -9,10 +9,10 @@ import (
 
 var (
 	// DefaultBufferSize is the default size of the buffer in bytes.
-	DefaultBufferSize int = 1024 * 256
+	DefaultBufferSize int = 1024 * 512 * 32
 
 	// DefaultBlockSize is the default size per R/W block in bytes.
-	DefaultBlockSize int = 1024 * 8
+	DefaultBlockSize int = 1024 * 16 * 32
 
 	// ErrOutOfRange indicates that the index was out of range.
 	ErrOutOfRange = errors.New("Indexes out of range")
